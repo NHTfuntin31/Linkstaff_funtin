@@ -1,0 +1,39 @@
+<!-- AWS アカウント -->
+gmail funtin3110 pw D------@
+
+<!-- Public IP-->
+43.206.236.95 
+
+<!-- 1 vài câu lênh đon gian -->
+
+man ls																			Hie^n th! ca'c Le^nh 
+
+df -m																			hie^n th! pha^n vu`ng o^ đi~a 
+																				(m megabyte, h Gb, H Tb)
+																				
+cp -p  ./index.html  ./index.html_org											Copy file giu nguye^n nga`y tha'ng tao
+
+vim index.html または　nano index.html											Chinh sua file (vim > nano)
+
+ssh bitnami@43.206.236.95														Ke^'t no^'i va`o linkstaff (public key)
+
+										‼Puttyは使うの禁止!!
+
+<!-- sau khi mo nano -->
+ctrl + 5 ??																		mo file chon nhieu
+ctrl + K 																		cut
+ctrl + X ->ctrl + Y -> Endter													Luu
+
+<!-- -->
+
+<!-- -->
+
+<!-- -->
+
+<!-- -->
+
+<!-- -->
+
+<!-- -->
+
+<!-- -->
