@@ -15,25 +15,101 @@ cp -p  ./index.html  ./index.html_org											Copy file giu nguye^n nga`y tha'
 
 vim index.html または　nano index.html											Chinh sua file (vim > nano)
 
-ssh bitnami@43.206.236.95														Ke^'t no^'i va`o linkstaff (public key)
+ssh bitnami@43.206.236.95	// ssh bitnami@linkstaff.site						Ke^'t no^'i va`o linkstaff (public key)
 
 										‼Puttyは使うの禁止!!
 
 <!-- sau khi mo nano -->
+
 ctrl + 5 ??																		mo file chon nhieu
 ctrl + K 																		cut
 ctrl + X ->ctrl + Y -> Endter													Luu
 
+<!-- sua loi --> !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+sudo chmod -R 775 ./storage
+sudo chown -R bitnami:daemon ./storage
+
+<!-- dang ki chung chi SSL  -->!!!!!!!!!!!!!!!!!!!!!!!!
+
+sudo /opt/bitnami/bncert-tool
+...v...v
+www.linkstaff.site linkstaff.site
+
+54.250.103.215
+
+<!-- note -->
+
+/opt/bitnami/apache/conf/httpd.conf
+
+
+/opt/bitnami/apache/conf/bitnami/httpd.conf
+
+<!-- note -->
+ServerRoot "/opt/bitnami/apache"
+
+ServerName www.example.com:80
+
+DocumentRoot "/opt/bitnami/apache/htdocs"
+
+ErrorLog "logs/error_log"
 <!-- -->
 
-<!-- -->
+<!-- Endpoint -->
 
-<!-- -->
+ls-757ce6936ff388ace0cfa78b0ee137109340db6a.civ3h1k1qdxd.ap-northeast-1.rds.amazonaws.com
 
-<!-- -->
+<!--DB connect -->
+sudo apt-get update
 
-<!-- -->
+sudo apt-get install mysql-server
 
-<!-- -->
+<!-- them ssh public ng khác  -->
 
-<!-- -->
+cd .ssh -> nano authorized_keys
+
+<!-- sua dia chi doc was  -->
+
+cd /opt/bitnami/apache2/conf/bitnami
+
+
+
+
+
+
+Changes to perform
+
+The following changes will be performed to your Bitnami installation:
+
+1. Stop web server
+2. Configure web server to use a free Let's Encrypt certificate for the domains:
+linkstaff.site
+3. Configure a cron job to automatically renew the certificate each month
+4. Configure web server name to: linkstaff.site
+5. Enable HTTP to HTTPS redirection (example: redirect http://linkstaff.site to
+https://linkstaff.site)
+6. Start web server once all changes have been performed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
