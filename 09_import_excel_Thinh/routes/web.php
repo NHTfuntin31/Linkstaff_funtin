@@ -23,13 +23,3 @@ Route::controller(StudentController::class)->group(function(){
     Route::get('student-export', 'export')->name('students.export');				
     Route::post('student-import', 'import')->name('students.import');			
     });		
-
-// Route::middleware([
-//     'auth:sanctum',
-//     config('jetstream.auth_session'),
-//     'verified'
-// ])->group(function () {
-//     Route::get('/dashboard', function () {
-//         return view('dashboard');
-//     })->name('dashboard');
-// });

@@ -27,21 +27,13 @@ class StudentController extends Controller
     }			
                 
 
-    public function import(Profile $request)			
+    public function import(Request $request)			
     {
         if (!$request->hasFile('file')) {
             return back()->withErrors(['message' => 'ファイルを選択してください。']);
         }
-        
-        try{
             Excel::import(new StudentsImport,request()->file('file'));
             return back()->with('success', 'Import successful!');
         
-        } catch (\Exception $e) {
-            return back()
-                ->withInput()
-                ->withErrors('インポートできません。'.$e->getMessage());
-        }
-        		
     }			
 }

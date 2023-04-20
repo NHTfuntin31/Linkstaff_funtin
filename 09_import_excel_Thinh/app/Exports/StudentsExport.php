@@ -21,7 +21,6 @@ class StudentsExport implements FromCollection, WithHeadings
     public function headings(): array		
     {		
         return ["ID",
-                "状態",
                 "氏名",
                 "氏名（カタカナ)",
                 "性別（男/女)",
