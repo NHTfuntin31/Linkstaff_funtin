@@ -10,7 +10,8 @@ use Maatwebsite\Excel\Concerns\ToCollection;
 use Maatwebsite\Excel\Concerns\WithCalculatedFormulas;
 //下のuseを追加します
 use Maatwebsite\Excel\Concerns\WithHeadingRow;	
-use Maatwebsite\Excel\Concerns\WithValidation;								
+use Maatwebsite\Excel\Concerns\WithValidation;
+use Illuminate\Support\Facades\Validator;							
 
 class StudentsImport implements WithHeadingRow, ToCollection, WithValidation, WithCalculatedFormulas
 {
@@ -66,7 +67,16 @@ class StudentsImport implements WithHeadingRow, ToCollection, WithValidation, Wi
                 'current_status' => $row[30], 
                 'note' => $row[31],
             ];
-            Student::create($data);
+            $validator = Validator::make($data, $this->rules());
+
+            if ($validator->fails()) {
+                // xử lý lỗi ở đây, ví dụ hiển thị thông báo lỗi
+                $errors = $validator->errors();
+                return back()->withErrors($errors);
+            }else{
+                Student::create($data);
+            }
+            
         }
         
             
