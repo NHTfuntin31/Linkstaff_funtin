@@ -9,6 +9,7 @@ class Student extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'student_id',
         'name',
         'name_kana',
         'sex',
@@ -21,7 +22,7 @@ class Student extends Model
         'sec_interv_date',
         'sec_interv_staff',
         'sec_interv_result',
-        'interv_date',
+        'intern_interv_date',
         'intern_department',
         'intern_result',
         'hire_date',

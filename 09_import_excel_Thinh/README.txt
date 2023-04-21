@@ -38,3 +38,81 @@ php artisan make:controller StudentController
 index.blade.php
 
 
+=========================================================================================================
+=============================================validation==================================================
+=========================================================================================================
+
+<!-- フンさんと同じ skill_master テーブルを作成 -->
+
+php artisan make:model SkillMaster -m -v -c
+
+(model SkillMaster、migration skill_masters , controller SkillMasterController)
+
+
+
+<!-- skill master viewを作成 -->
+
+layout.blade.php				//layout
+skills-index.blade.php			//index画面
+skills-edit.blade.php			//修正画面
+
+
+
+<!-- StudentsImport.phpの中で -->
+   (app/Imports/studentsImport.php)
+   
+ public function model(array $row) の代わりに public function collection(Collection $rows)を使い
+ 
+ 
+ //インポートする前に値をチェックするために
+ public function rules(): array を追加
+
+
+<!-- 詳細 -->
+
+//SE skillを管理するテーブル。
+http://127.0.0.1:8000/skill
+
+//↑↑SkillMasterを参照し、skillsを登録してインポート時にチェックする
+http://127.0.0.1:8000/student
+
+
+
+<!-- まだできていないこと -->
+
+チェックした後で、エラーの内容は日本語になっていないです。
+
+
+<!--  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
