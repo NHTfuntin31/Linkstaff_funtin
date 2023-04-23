@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->id();
-            $table->String('name')->nullable();
+            $table->integer('student_id')->default(0);
+            $table->String('name')->unique();
             $table->String('name_kana')->nullable();
             $table->String('sex')->nullable();
             $table->date('birthday')->nullable();
@@ -25,7 +26,7 @@ return new class extends Migration
             $table->date('sec_interv_date')->nullable();
             $table->String('sec_interv_staff')->nullable();
             $table->String('sec_interv_result')->nullable();
-            $table->date('interv_date')->nullable();
+            $table->date('intern_interv_date')->nullable();
             $table->String('intern_department')->nullable();
             $table->String('intern_result')->nullable();
             $table->date('hire_date')->nullable();

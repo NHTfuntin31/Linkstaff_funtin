@@ -16,6 +16,7 @@
                             {{ session('success') }}
                         </div>
                     @endif
+
                     <div class="col-md-12">
                     @if ($errors->any())
                         <div class="alert alert-danger">
@@ -27,15 +28,6 @@
                         </div>
                     @endif
                     </div>
-                    <!-- @if (session('errors'))
-                        <div class="alert alert-danger">
-                            <ul>
-                                @foreach (session('errors')->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif -->
                     <div class="card-body">							
                         <form action="{{ route('students.import') }}" method="POST" enctype="multipart/form-data">							
                             @csrf							
@@ -49,8 +41,8 @@
                         <table class="table table-bordered mt-3">							
                             <tr>							
                                 <th colspan="5">				
-                                    学生リスト							
-                                    <a class="btn btn-danger float-end" href="{{ route('students.export') }}">エスポットする</a>						
+                                    リスト							
+                                    <a class="btn btn-danger float-end" href="{{ route('students.export') }}">エクスポート</a>						
                                 </th>							
                             </tr>							
                             <tr>							

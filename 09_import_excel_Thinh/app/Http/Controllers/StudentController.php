@@ -9,8 +9,6 @@ use App\Imports\StudentsImport;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Models\Student;
 
-use App\Http\Requests\Profile;
-
 class StudentController extends Controller
 {
     
@@ -27,13 +25,13 @@ class StudentController extends Controller
     }			
                 
 
-    public function import(Request $request)			
+    public function import(Request $request)	
     {
         if (!$request->hasFile('file')) {
             return back()->withErrors(['message' => 'ファイルを選択してください。']);
         }
-            Excel::import(new StudentsImport,request()->file('file'));
-            return back()->with('success', 'Import successful!');
         
+        Excel::import(new StudentsImport, request()->file('file'));
+        return redirect()->route('students.index');
     }			
 }

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\SkillMasterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +20,9 @@ Route::get('/', function () {
 });
 
 Route::controller(StudentController::class)->group(function(){				
-    Route::get('student', 'index');				
+    Route::get('student', 'index')->name('students.index');			
     Route::get('student-export', 'export')->name('students.export');				
     Route::post('student-import', 'import')->name('students.import');			
     });		
+
+    Route::resource('/skill', SkillMasterController::class);
