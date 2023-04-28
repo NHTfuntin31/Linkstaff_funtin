@@ -7,9 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
+    protected $hidden = ['created_at', 'updated_at'];
     use HasFactory;
     protected $fillable = [
-        'student_id',
+        'id',
         'name',
         'name_kana',
         'sex',

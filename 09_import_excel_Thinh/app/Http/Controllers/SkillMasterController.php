@@ -9,7 +9,7 @@ class SkillMasterController extends Controller
 {
     public function index()
     {
-        $skill_masters = SkillMaster::paginate(5);
+        $skill_masters = SkillMaster::all();
         return view('skills-index', compact('skill_masters'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
 

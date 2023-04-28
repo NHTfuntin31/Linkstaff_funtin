@@ -37,7 +37,6 @@
                             </tr>
                         @endforeach
                         <div class="float-end">
-                            {{ $skill_masters->links() }}
                         </div>
                     </tbody>
                 </table>
