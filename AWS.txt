@@ -53,6 +53,26 @@ cd /opt/bitnami/apache2/conf/bitnami
 
 
 
+<!-- thao tac tren DB -->
+mysql -u <username> -p<password> -h <host> <database_name>     :      mysql -uroot -p
+
+show databases;
+USE <database_name>;
+
+show tables;
+SELECT * FROM <table_name>;
+
+DELETE FROM <table_name>;
+
+describe <table_name>;   //Hiển thị thông tin về bảng
+
+UPDATE <table_name> SET <column_name> = <new_value> WHERE <condition>;         <table_name>: tên của bảng muốn chỉnh sửa.
+                                                                               <column_name>: tên của cột muốn chỉnh sửa.
+                                                                               <new_value>: giá trị mới của cột muốn chỉnh sửa.
+                                                                               <condition>: điều kiện để xác định bản ghi cần được chỉnh sửa.
+
+
+
 
 
 
