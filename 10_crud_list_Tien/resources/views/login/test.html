@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+
+</head>
+
+<body>
+
+    <form method="POST" action="/submit-form" id="my-form">
+        @csrf
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email-input">
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script>
+        $('#my-form').validate({
+            rules: {
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                email: {
+                    required: 'Email không được bỏ trống',
+                    email: 'Email không đúng định dạng'
+                }
+            },
+            errorPlacement: function(error, element) {
+                error.insertAfter(element);
+            }
+        });
+    </script>
+
+    <input type="tel" id="phone" oninput="formatPhone()" placeholder="080-1234-5678">
+
+    <script>
+        function formatPhone() {
+            let phone = document.getElementById("phone");
+            let input = phone.value;
+            input = input.replace(/\D/g, ''); // xóa tất cả các ký tự không phải là số
+            input = input.substring(0, 11); // giới hạn độ dài của số điện thoại là 11 số
+            let formatted = input.replace(/(\d{3})(\d{4})(\d{4})/, "$1-$2-$3"); // chia thành các nhóm số
+            phone.value = formatted;
+        }
+    </script>
+    <div id="onmouseenter">
+        <p>onmouseenter: <span id="demo1">Mouse over me!</span></p>
+    </div>
+
+    <div id="onmouseover">
+        <p>onmouseover: <span id="demo2">Mouse over me!</span></p>
+    </div>
+
+    <script>
+        var x = 0;
+        var y = 0;
+
+        function myEnterFunction() {
+            document.getElementById("demo1").innerHTML = x += 1;
+        }
+
+        function myOverFunction() {
+            document.getElementById("demo2").innerHTML = y += 1;
+        }
+    </script>
+
+</body>
+
+</html>

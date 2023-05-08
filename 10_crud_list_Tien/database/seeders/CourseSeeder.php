@@ -1,0 +1,26 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use App\Models\Countries;
+class CourseSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $Course  = [[
+            'name' => 'タイ',],[
+            'name' => 'カンボジア',],[
+            'name' => 'ラオス',],[
+            'name' => 'キューバ',],[
+            'name' => 'ドバイ',]
+        ];
+        Countries::insert($Course);
+    }
+}
