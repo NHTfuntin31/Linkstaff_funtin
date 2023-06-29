@@ -1,0 +1,36 @@
+{
+	"main":{
+		"welcome": "ようこそ、Reactアプリへ！"
+	},
+	"nav":{
+		"my_page": "マイページ",
+		"chutosaiyo_wo_okangaenokigyousama": "中途採用をお考えの企業さまへ",
+		"tenshokusodanservice_omoshikomi": "転職相談サービスお申し込み",
+		"login": "ログイン",
+		"logout": "ログアウト"
+	},
+	"top":{
+		"kyujin_wo_sagasu": "求人を探す",
+		"tenshoku_sodan_service": "転職相談サービス",
+		"tenshoku_oyakudachi_joho": "転職お役立ち情報",
+		"kaisha_joho": "会社情報",
+		"otoiawase": "お問い合わせ"
+	},
+	"job":{
+		"shosai_wo_miru": "詳細を見る",
+		"kono_kyujinni_oubosuru": "この求人に応募する"
+	},
+	"common":{
+		"kojin_johono_toriatsukaini_tsuite": "個人情報の取り扱いについて",
+		"kojin_joho_hogohoshin": "個人情報保護方針",
+		"riyokiyaku": "利用規約",
+		"suisho_kankyo": "推奨環境",
+		"shimei": "氏名",
+		"jusho": "住所",
+		"denwa_bango": "電話番号",
+		"yubin_bango": "郵便番号",
+		"email": "メール",
+		"password": "パスワード"
+	}
+}
+	

@@ -10,8 +10,9 @@ gmail funtin3110 pw D------@
 
 man ls																			Hie^n th! ca'c Le^nh 
 
-df -m																			hie^n th! pha^n vu`ng o^ đi~a 
+df -m																		hie^n th! pha^n vu`ng o^ đi~a 
 																				(m megabyte, h Gb, H Tb)
+vmstat 																		メモリの使用量／使用率を表示できます。
 																				
 cp -p  ./index.html  ./index.html_org											Copy file giu nguye^n nga`y tha'ng tao
 
@@ -23,33 +24,39 @@ KOXXKpKdzlh6
 										‼Puttyは使うの禁止!!
 
 <!-- sau khi mo nano -->
-
 ctrl + 5 ??																		mo file chon nhieu
 ctrl + K 																		cut
 ctrl + X ->ctrl + Y -> Endter													Luu
 
-<!-- sua loi --> !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+<!-- sua loi --> !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 sudo chmod -R 775 ./storage
 sudo chown -R bitnami:daemon ./storage
 
-<!-- dang ki chung chi SSL  -->!!!!!!!!!!!!!!!!!!!!!!!!
 
+<!-- dang ki chung chi SSL  -->!!!!!!!!!!!!!!!!!!!!!!!!
 sudo /opt/bitnami/bncert-tool
 ...v...v
 www.linkstaff.site linkstaff.site
-
 54.250.103.215
+
+
+<!-- lay key cua minh -->
+C:\Users\your_username\.ssh\id_rsa
 
 
 
 <!-- them ssh public ng khác  -->
-
 cd .ssh -> nano authorized_keys
 
-<!-- sua dia chi doc was  -->
 
+
+<!-- sua dia chi doc was  -->
 cd /opt/bitnami/apache2/conf/bitnami
+nano bitnami-ssl.conf
+
+<!-- アパッチ再起動  -->
+sudo /opt/bitnami/ctlscript.sh restart apache
 
 
 
@@ -70,6 +77,10 @@ UPDATE <table_name> SET <column_name> = <new_value> WHERE <condition>;         <
                                                                                <column_name>: tên của cột muốn chỉnh sửa.
                                                                                <new_value>: giá trị mới của cột muốn chỉnh sửa.
                                                                                <condition>: điều kiện để xác định bản ghi cần được chỉnh sửa.
+
+
+
+
 
 
 
@@ -112,7 +123,6 @@ sudo apt-get install mysql-server
 <!-- note -->
 
 /opt/bitnami/apache/conf/httpd.conf
-
 
 /opt/bitnami/apache/conf/bitnami/httpd.conf
 

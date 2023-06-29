@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Smalot\PdfParser\Parser;
 use App\Models\Nepia;
+use Geocoder\GeocoderFactory;
 
 class NepiaController extends Controller
 {
@@ -23,12 +24,33 @@ class NepiaController extends Controller
         ]);
 
         // use of pdf parser to read content from pdf 
-        $fileName = $file->getClientOriginalName();
+        //$fileName = $file->getClientOriginalName();
         $pdfParser = new Parser();
         $pdf = $pdfParser->parseFile($file->path());
+
         $content = $pdf->getText();
-       // $content = preg_replace('/\h+/', ' ', $content);
+        $content = str_replace("\t", "", $content);
         $encodedContent = mb_convert_encoding($content, 'UTF-8');
+
+        $lines = explode("\n", $encodedContent);
+
+        foreach ($lines as $line) {
+            if (strpos($line, '氏  名') !== false) {
+                $name = trim(str_replace('氏  名', '', $line)); // Nhặt giá trị sau từ "Name"
+
+            }
+
+            $pattern = '/\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/';
+                if (preg_match($pattern, $line, $matches)) {
+                    $email = $matches[0];
+                }
+
+            $pattern = '/市|区|府/u';
+            if (preg_match($pattern, $line)) {
+                $address = trim($line);
+            }
+
+        }
 
         
 
@@ -41,6 +63,6 @@ class NepiaController extends Controller
         // $upload_file->colum4 = $content;
         // $upload_file->save();
 
-        return redirect()->back();
+        return view('fuck',compact('lines','name','email','address'));
     }
 }

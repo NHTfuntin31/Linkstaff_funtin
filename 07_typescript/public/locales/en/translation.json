@@ -1,0 +1,36 @@
+{
+	"main":{
+		"welcome": "welcome"
+	},
+	"nav":{
+		"my_page": "my_page",
+		"chutosaiyo_wo_okangaenokigyousama": "chutosaiyo_wo_okangaenokigyousama",
+		"tenshokusodanservice_omoshikomi": "tenshokusodanservice_omoshikomi",
+		"login": "login"
+	},
+	"top":{
+		"kyujin_wo_sagasu": "kyujin_wo_sagasu",
+		"tenshoku_sodan_service": "tenshoku_sodan_service",
+		"tenshoku_oyakudachi_joho": "tenshoku_oyakudachi_joho",
+		"kaisha_joho": "kaisha_joho",
+		"otoiawase": "otoiawase"
+	},
+	"job":{
+		"shosai_wo_miru": "shosai_wo_miru",
+		"kono_kyujinni_oubosuru": "kono_kyujinni_oubosuru"
+	},
+	"common":{
+		"kojin_johono_toriatsukaini_tsuite": "kojin_johono_toriatsukaini_tsuite",
+		"kojin_joho_hogohoshin": "kojin_joho_hogohoshin",
+		"riyokiyaku": "riyokiyaku",
+		"suisho_kankyo": "suisho_kankyo",
+		"shimei": "shimei",
+		"jusho": "jusho",
+		"denwa_bango": "denwa_bango",
+		"yubin_bango": "yubin_bango",
+		"email": "email",
+		"password": "password"
+	}
+
+}
+	
