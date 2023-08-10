@@ -1,0 +1,5 @@
+54.92.117.213
+linkstaff.biz
+
+ssh bitnami@linkstaff.biz (or) ssh bitnami@54.92.117.213
+

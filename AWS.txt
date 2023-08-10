@@ -127,6 +127,8 @@ sudo apt-get install mysql-server
 /opt/bitnami/apache/conf/bitnami/httpd.conf
 
 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDoky/P653pGvRukW7Njg+Fe5D3I4jNLsNDsSj0/v3kaL2xLVV4JS/MAf+OsF+5dLsrrx21B0PUwwEX+2lVa4fERJz/pZTXb8ULLyH5H9BMa3dLu6cv+SV/GG/TUKpzI51b5GM++KO1s5R/Q8usX/rdOB4Y5AXXa9UlNHN0uaJudmhqxWQnwEnU4wZCpDlOoOhXcKGCECwLeYyHUaBgBjWwaS2ve7RmTbvLjVa02fwatGqeS+Rq827+OEIC1Y2trhqWg9afj87psF0OxksaCGpAZd5dge9N8iTAa+pH77y13c0kd6ddej21LX9kV8cruoJPRljHzmxyhYKVDTkv7kUqQ1PmbTJHg5YiVswPQPv+JdkINm/irfMH/6HjpOuWuP/NsMLFrjNIi8/k19DBt3zf3ORHL3ksdEwqPgd4Lc0Tom2jJe0iZC8tGtVKFFfTs0CPJlnnHd18UjV2jHQsa4tOZ6dVqF33uzpYSx9xxAIKaI4JAgH/XzuosVCHVeOmO7U= bitnami@ip-172-26-15-240
+
 
 
 
