@@ -76,7 +76,9 @@ function App() {
             <button onClick={handleGetValueClick} disabled={isGameOver}>Submit guess</button>
           </div>
           <div className="Result_specifically">
-            <p>Previous guesses: {arr.join(', ')}</p>
+            { arr.length > 0 &&
+              <p>Previous guesses: {arr.join(', ')}</p>
+            }
             {Test()}
           </div>
         </div>
