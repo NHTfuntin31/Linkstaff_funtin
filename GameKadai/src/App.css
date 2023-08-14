@@ -14,6 +14,8 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: gray;
+  color: black;
 }
 
 .Container {
@@ -21,7 +23,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #b8bff7;
+  background: #FFF;
   padding: 20px;
 }
 
@@ -42,12 +44,9 @@ html, body {
 .Main span.ok {
   background: #67ab05;
 }
+
 .Main span.not_ok {
   background: red;
-}
-
-.ItemArr span.not_pass {
-  background: #575b5e;
 }
 
 .Main h1 {
@@ -57,4 +56,18 @@ html, body {
 
 .ItemArr {
   display: flex;
+  gap: 10px;
+}
+
+.ItemArr span.not_pass {
+  background: #575b5e;
+}
+.ItemArr button {
+  background: #9d7982;
+  color: black;
+}
+
+.ItemArr input {
+  background: #FFF;
+  color: black;
 }
