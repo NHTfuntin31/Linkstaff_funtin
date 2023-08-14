@@ -32,7 +32,7 @@ function App() {
   };
 
   const Test = () => {
-    if (arr.length > 0 && arr.length <= 4) {
+    if (arr.length > 0 && arr.length < 4) {
       if (randomNumber === arr[arr.length - 1]) {
         return (
           <>
