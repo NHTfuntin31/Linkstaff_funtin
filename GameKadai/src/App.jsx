@@ -2,9 +2,8 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-  const generateRandomNumber = () => Math.floor(Math.random() * 100) + 1;
-
-  const [randomNumber, setRandomNumber] = useState(generateRandomNumber());
+  const randomNum = () => Math.floor(Math.random() * 100) + 1;
+  const [randomNumber, setRandomNumber] = useState(randomNum());
   const [item, setItem] = useState('');
   const [arr, setArr] = useState([]);
   const [isGameOver, setIsGameOver] = useState(false);
@@ -28,15 +27,16 @@ function App() {
     setItem('');
     setArr([]);
     setIsGameOver(false);
-    setRandomNumber(generateRandomNumber());
+    setRandomNumber(randomNum());
   };
 
   const Test = () => {
-    if (arr.length > 0 && arr.length < 4) {
+    if (!isGameOver && arr.length > 0 && arr.length <= 4) {
       if (randomNumber === arr[arr.length - 1]) {
         return (
           <>
             <span className='ok'>Congratulations! You got it right!</span>
+            <button onClick={handleResetClick}>Start new game</button>
           </>
         );
       } else if (randomNumber > arr[arr.length - 1]) {
@@ -54,7 +54,7 @@ function App() {
           </>
         );
       }
-    } else if (isGameOver) {
+    } else if (isGameOver && randomNumber !== arr[arr.length - 1] && arr.length === 4) {
       return (
         <>
           <span className='not_pass'>GAME OVER!!!</span>
