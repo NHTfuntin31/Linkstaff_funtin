@@ -14,7 +14,6 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #5b6a87;
 }
 
 .Container {
@@ -22,7 +21,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: black;
+  background: #b8bff7;
   padding: 20px;
 }
 
