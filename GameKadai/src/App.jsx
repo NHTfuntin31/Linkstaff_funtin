@@ -36,7 +36,6 @@ function App() {
         return (
           <>
             <span className='ok'>Congratulations! You got it right!</span>
-            <button onClick={handleResetClick}>Start new game</button>
           </>
         );
       } else if (randomNumber > arr[arr.length - 1]) {
@@ -68,6 +67,7 @@ function App() {
   return (
     <div className='Container'>
       <div className="Main">
+        {randomNumber}
         <h1>Number guessing game</h1>
         <p>We have selected a random number between 1 and 100. See if you can guess it in 4 turns or fewer. We'll tell you if your guess was too high or too low.</p>
         <div className='Result'>

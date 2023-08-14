@@ -64,10 +64,14 @@ html, body {
 }
 .ItemArr button {
   background: #9d7982;
-  color: black;
+  color: #FFF;
 }
 
 .ItemArr input {
   background: #FFF;
   color: black;
+}
+
+.Result_specifically span {
+  padding: 2px;
 }
