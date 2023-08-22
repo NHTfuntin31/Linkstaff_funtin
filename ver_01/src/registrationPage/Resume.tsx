@@ -1,12 +1,6 @@
 // import { Container } from "./News"
 // import { Content } from "./News"
 import { FooterContainer } from "../GlobalStyle";
-interface ResumeProps {
-  nameKana: string;
-  name: string;
-  birthday: string;
-  gender: string;
-}
 
 function Resume() {
   return (
@@ -82,7 +76,7 @@ function Resume() {
                             </td>
                           </tr>
                           <tr>
-                            <td colSpan="2">
+                            <td>
                               <table
                                 cellSpacing="0"
                                 width="337.5"

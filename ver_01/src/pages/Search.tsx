@@ -466,7 +466,6 @@ const Search = () => {
    const [isSearchBoxVisible, setIsSearchBoxVisible] = useState(false);
    const [showSearchModal, setshowSearchModal] = useState(false); //検査モダールの状態
    const [selectedAria, setselectedAria] = useState<string[]>([]); //モダールから選択した値を保存
-   const [showLoginModal, setShowLoginModal] = useState<boolean>(false);
    
    //session StorageからmyArrayの値を受け取る
    const storedArray: any = sessionStorage.getItem("myArray");

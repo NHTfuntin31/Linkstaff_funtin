@@ -12,7 +12,6 @@ import {
   TopNewBox,
 } from "./../../styles/homeStyles/topNewInfoBox";
 import { Link } from "react-router-dom";
-import { Icon } from '@iconify/react';
 import { useQuery } from "@tanstack/react-query";
 import { ButtonNormal, LargeButton} from './../../components/ButtonStyled'
 import { useTranslation } from 'react-i18next';
@@ -23,7 +22,7 @@ export const NewInfo = () => {
   const [sliceIndex, setSliceIndex] = useState(0);
   const [showNext, setShowNext] = useState(false);
   const [itemsPerSlice, setItemsPerSlice] = useState(4);
-  const [position, setPosition] = useState(0);
+  const [position] = useState(0);
   const [swipeStartX, setSwipeStartX] = useState(0);
 
   const handleSwipe = (direction: number) => {

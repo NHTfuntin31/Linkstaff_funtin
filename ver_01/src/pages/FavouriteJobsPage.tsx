@@ -10,8 +10,6 @@ import { getQueryString } from '../global/globalfuntion'
 import { useState, useEffect } from "react";
 import { APITokenInHeader, baseURL } from '../global/global'
 import { JobTestType } from '../types/JobTestType'
-import { useDispatch } from 'react-redux'
-import { getStateArrJob } from "../redux/slice/JobArrSlice";
 
 export const Container = styled.div`
     display:flex;

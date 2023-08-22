@@ -30,7 +30,6 @@ import Apply from './pages/Apply';
 import Prf from './pages/Prf';
 import PrfT from './pages/PrfT';
 import Resume from './registrationPage/Resume';
-import Burger from './components/Burger';
 
 const queryClient = new QueryClient()
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ContentComponent from "./ContentComponent";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store/Store";
 import { useQueries } from "@tanstack/react-query";
 import { baseURL, APITokenInHeader } from "../../global/global";
