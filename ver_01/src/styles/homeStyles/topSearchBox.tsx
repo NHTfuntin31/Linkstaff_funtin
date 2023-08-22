@@ -182,6 +182,8 @@ export const TopLink = styled.div`
         border-top: none;
       }
     }
+    @media(max-width: ${DISPLAY_MD}){
+      width: 400px;
   }
 `;
 export const SpecialLink = styled.div`
