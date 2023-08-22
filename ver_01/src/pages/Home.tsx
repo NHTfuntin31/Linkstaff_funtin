@@ -212,7 +212,7 @@ const Home = () => {
       <NewInfo />
       <Search />
       <Shain />
-      <Service />
+      <Service /> 
       <Voice />
     </>
   );

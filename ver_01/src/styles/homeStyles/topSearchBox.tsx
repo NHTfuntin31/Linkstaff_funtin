@@ -211,5 +211,9 @@ export const SpecialLink = styled.div`
       }
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   	}
+
+    @media(max-width: ${DISPLAY_MD}){
+      width: 400px;
+    }
 }
 `;
