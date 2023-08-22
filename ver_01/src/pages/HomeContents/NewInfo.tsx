@@ -1,4 +1,4 @@
-import React, { useState, useEffect  } from "react";
+import { useState, useRef  } from "react";
 import {
   NewInfoSection,
   TopNewInfo,
@@ -19,47 +19,8 @@ import { baseAPI } from "../../global/global";
 
 export const NewInfo = () => {
   const { t } = useTranslation();
-  const [sliceIndex, setSliceIndex] = useState(0);
-  const [showNext, setShowNext] = useState(false);
-  const [itemsPerSlice, setItemsPerSlice] = useState(4);
-  const [position] = useState(0);
-  const [swipeStartX, setSwipeStartX] = useState(0);
-
-  const handleSwipe = (direction: number) => {
-    const maxSliceIndex = Math.ceil(data.data.length / itemsPerSlice) - 1;
-    if (direction === 1 && sliceIndex < maxSliceIndex) {
-      setShowNext(true);
-      setTimeout(() => {
-        setShowNext(false);
-        setSliceIndex(sliceIndex + 1);
-      }, 500);
-    } else if (direction === -1 && sliceIndex > 0) {
-      setShowNext(true);
-      setTimeout(() => {
-        setShowNext(false);
-        setSliceIndex(sliceIndex - 1);
-      }, 500);
-    }
-  };
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 599) {
-        setItemsPerSlice(2);
-      }else if(window.innerWidth < 1024){
-        setItemsPerSlice(3);
-      }
-       else {
-        setItemsPerSlice(4);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const [position, setPosition] = useState(0);
+  const scrl = useRef<HTMLDivElement | null>(null);
 
   const { isLoading, error, data } = useQuery({
     queryKey: ["job"],
@@ -74,47 +35,15 @@ export const NewInfo = () => {
     );
   }
   if (error) return "An error has occurred: ";
-  const handleLeftClick = () => {
-    if (sliceIndex > 0) {
-      setShowNext(true);
-      setTimeout(() => {
-        setShowNext(false);
-        setSliceIndex(sliceIndex - 1);
-      }, 500);
+
+  const slide = (shift: number) => {
+    if(scrl.current){
+      scrl.current.scrollLeft += shift;
     }
   };
 
-  const handleRightClick = () => {
-    const maxSliceIndex = Math.ceil(data.data.length / itemsPerSlice) - 1;
-    if (sliceIndex < maxSliceIndex) {
-      setShowNext(true);
-      setTimeout(() => {
-        setShowNext(false);
-        setSliceIndex(sliceIndex + 1);
-      }, 500);
-    }
-  };
-
-  const handleSwipeStart = (event: React.TouchEvent<HTMLDivElement>) => {
-    setSwipeStartX(event.touches[0].clientX);
-  };
-
-  const handleSwipeEnd = (event: React.TouchEvent<HTMLDivElement>) => {
-    const diff = swipeStartX - event.changedTouches[0].clientX;
-    if (diff > 0) {
-      handleSwipe(1); // Swipe left
-    } else if (diff < 0) {
-      handleSwipe(-1); // Swipe right
-    }
-  };
-
-  const slicedData = data.data.slice(
-    sliceIndex * itemsPerSlice,
-    sliceIndex * itemsPerSlice + itemsPerSlice
-  );
-
-  const renderedItems = slicedData.map((item: any, index: any) => (
-    <GroupLink key={index} className={showNext ? "fade-out" : "fade-in"}>
+  const renderedItems = data.data.map((item: any, index: any) => (
+    <GroupLink key={index} style={{ transform: `translateX(${position}px`, transition: 'transform 0.5s ease' }}>
       <IMG>
         <img
           src="https://www.workport.co.jp/img_rec/231/rec1.jpg?date=20230406"
@@ -144,24 +73,17 @@ export const NewInfo = () => {
     <>
       <NewInfoSection>
         <h2>新着求人</h2>
-        <p>({sliceIndex + 1}/{Math.ceil(data.data.length / itemsPerSlice)})</p>
-
         <TopNewInfo>
           <TopNewBox>
-            <TopNewSwiper
-              onTouchStart={handleSwipeStart}
-              onTouchEnd={handleSwipeEnd}
-              style={{ transform: `translateX(-${position * 300}px)` }}
-            >
-              <button className="LeftBtn" onClick={handleLeftClick}>＜</button>
-              <SwiperSwaper>
+            <TopNewSwiper>
+              <button className="LeftBtn" onClick={() => slide(-450)}>＜</button>
+              <SwiperSwaper ref={scrl}>
                 {renderedItems}
               </SwiperSwaper>
-              <button className="RightBtn" onClick={handleRightClick}>＞</button>
+              <button className="RightBtn" onClick={() => slide(+450)}>＞</button>
             </TopNewSwiper>
           </TopNewBox>
         </TopNewInfo>
-
         <LargeButton style={{height: '60px'}}>
           <ButtonNormal>
             <Link to="/search"><span>{t("top.button.shinchaku_kyujin_ichiran")}</span></Link>

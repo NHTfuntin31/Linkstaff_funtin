@@ -36,9 +36,13 @@ export const TopNewSwiper = styled.div`
 `
 export const SwiperSwaper = styled.div`
   display: flex;
-  justify-content: space-around;
-  gap: 50px;
+  gap: 25px;
   width: 100%;
+  height: 100%;
+  max-width: ${DISPLAY_LG};
+  flex: 1;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
 
   @media(max-width: ${DISPLAY_LG}){
     gap: 5px;
@@ -46,6 +50,7 @@ export const SwiperSwaper = styled.div`
 `
 export const TopNewBox = styled.div`
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   height: 451.56px;
