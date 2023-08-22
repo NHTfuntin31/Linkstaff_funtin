@@ -1,0 +1,169 @@
+{
+  "main": {
+    "welcome": "welcome"
+  },
+  "nav": {
+    "my_page": "my_page",
+    "chutosaiyo_wo_okangaenokigyousama": "chutosaiyo_wo_okangaenokigyousama",
+    "tenshokusodanservice_omoshikomi": "tenshokusodanservice_omoshikomi",
+    "login": "login"
+  },
+  "top": {
+    "kyujin_wo_sagasu": "kyujin_wo_sagasu",
+    "tenshoku_sodan_service": "tenshoku_sodan_service",
+    "tenshoku_oyakudachi_joho": "tenshoku_oyakudachi_joho",
+    "kaisha_joho": "kaisha_joho",
+    "otoiawase": "otoiawase",
+    "tenshoku_kibou_sha": "Tenshoku_kibou_sha",
+    "chyouto_saiyo": "chyouto_saiyo",
+    "sonota": "sonota",
+    "unei_gaisha": "unei_gaisha",
+
+    "button": {
+      "tenshoku_sodan_sabisu_ni_tsuite_kuwashiku": "tenshoku_sodan_sabisu_ni_tsuite_kuwashiku",
+      "tenshoku_sodan_sabisu_ni_moshikomu": "tenshoku_sodan_sabisu_ni_moshikomu",
+      "shinchaku_kyujin_ichiran": "shinchaku_kyujin_ichiran",
+      "shokushu_kara_sagasu": "shokushu_kara_sagasu",
+      "kinmuchi_kara_sagasu": "kinmuchi_kara_sagasu",
+      "shosai_joken_kara_sagasu": "shosai_joken_kara_sagasu",
+      "tenshoku_konsheruju_shokai": "tenshoku_konsheruju_shokai",
+      "kuwashi_sabisu_no_nagare": "kuwashi_sabisu_no_nagare",
+      "tenshoku_seikosha_no_koe_ichiran": "tenshoku_seikosha_no_koe_ichiran",
+      "kono_naiyo_de_kensaku": "kono_naiyo_de_kensaku",
+      "sentaku_shita_joken_o_kuria": "sentaku_shita_joken_o_kuria"
+    }
+  },
+  "job": {
+    "shosai_wo_miru": "shosai_wo_miru",
+    "kono_kyujinni_oubosuru": "kono_kyujinni_oubosuru"
+  },
+  "common": {
+    "kojin_johono_toriatsukaini_tsuite": "kojin_johono_toriatsukaini_tsuite",
+    "kojin_joho_hogohoshin": "kojin_joho_hogohoshin",
+    "riyokiyaku": "Terms of Service",
+    "suisho_kankyo": "suisho_kankyo",
+    "shimei": "shimei",
+    "jusho": "jusho",
+    "denwa_bango": "denwa_bango",
+    "yubin_bango": "yubin_bango",
+    "email": "email",
+    "password": "password",
+    "otoiawase": "otoiawase_Tenshoku_kiboo_sha_sama",
+    "password_owasure": "password_owasure",
+    "chyouto_saiyo": "otoiawase_Chyuto_saiyou_go_tantousha_sama",
+    "kihon_jouhou": "kihon_jouhou",
+    "gakireki_shokureki": "gakireki_shokureki",
+    "shikaku_tsuukin_jikan_hoka": "shikaku_tsuukin_jikan_hoka",
+    "shibou_douki_kibou_jouken": "shibou_douki_kibou_jouken",
+    "sonota": "sonota"
+  },
+  "login": {
+    "login": "login",
+    "registed_user": "registed_user",
+    "email": "email",
+    "password": "password",
+    "remember_login": "remember_login",
+    "service": "service",
+    "information": "information",
+    "agree": "agree",
+    "login_button": "login_button",
+    "forgot_password": "forgot_password",
+    "register": "register",
+    "register_start": "register_start",
+    "workport_member": "workport_member",
+    "naiyou1": "naiyou1",
+    "naiyou2": "naiyou2",
+    "naiyou3": "naiyou3",
+    "koumoku1": "koumoku1",
+    "koumoku2": "koumoku2",
+    "koumoku3": "koumoku3",
+    "koumoku4": "koumoku4",
+    "koumoku5": "koumoku4",
+    "register_button": "register_button"
+  },
+  "accessibility": {
+    "suishou_kankyouni_tsuite": "suishou_kankyouni_tsuite",
+    "go_riyouno_burauzani_tsuite": "go_riyouno_burauzani_tsuite",
+    "sekyuritini_tsuite": "sekyuritini_tsuite",
+    "sumatofon_taburetto": "sumatofon_taburetto"
+  },
+  "privacy": {
+    "kojin_joho_hogo_hoshin": "kojin_joho_hogo_hoshin"
+  },
+  "form":{
+    "hitsuyou_jikou": "hitsuyou_jikou",
+    "o_toiawase_koumoku": "o_toiawase_koumoku",
+    "onamae": "onamae",
+    "denwa_bangou": "denwa_bangou",
+    "meru_adoresu": "meru_adoresu",
+    "kaisha_mei": "kaisha_mei",
+    "kisha_HP": "kisha_HP",
+    "saiyou_yotei_no": "saiyou_yotei_no",
+    "kyuujin_shokushu": "kyuujin_shokushu",
+    "kyuujin_no_kinmu_chi": "kyuujin_no_kinmu_chi",
+    "kyuujin_keisai_peuji": "kyuujin_keisai_peuji",
+    "o_toiawase_naiyou": "o_toiawase_naiyou",
+    "wakkupouto_o_shitta_kikkake": "wakkupouto_o_shitta_kikkake",
+    "kojin_jouhou_no_toriatsukai_ni_tsuite": "kojin_jouhou_no_toriatsukai",
+    "kojin_jouhou_toriatsukai_ni_doui_suru": "Kojin_jouhou_toriatsukai_ni_doui_suru",
+    "nyuuryoku_naiyou_o_kakunin_suru": "nyuuryoku_naiyou_o_kakunin_suru",
+    "hankaku_eisuuji_nyuuryoku": "hankaku_eisuuji_nyuuryoku",
+    "sei": "sei",
+    "sei_kana": "sei_kana",
+    "mei": "mei",
+    "mei_kana": "mei_kana",
+    "toshi": "toshi",
+    "tsuki": "tsuki",
+    "hi": "hi",
+    "sei_nen_gappi": "sei_nen_gappi",
+    "sei_betsu": "sei_betsu",
+    "yuubin_bangou": "yuubin_bangou",
+    "todou_fuken": "todou_fuken",
+    "shiku_chouson_machi_iki": "shiku_chouson_machi_iki",
+    "banchi_tatemono_mei": "banchi_tatemono_mei",
+    "juusho_furigana": "juusho_furigana",
+    "shiku_chouson_banchi": "shiku_chouson_banchi",
+    "joukiigai_ni_renrakusen_ga_aru_baai": "joukiigai_ni_renrakusen_ga_aru_baai",
+    "shashin_oappuroudo_suru": "shashin_oappuroudo_suru",
+    "shashin_o_sakujo_suru": "shashin_o_sakujo_suru",
+    "shoumei_shashin": "shoumei_shashin",
+    "sakusei_bi": "sakusei_bi",
+    "kyou_no_hidzuke_o_hanei_suru": "kyou_no_hidzuke_o_hanei_suru",
+    "tadashii_yuubinbangou_o_nyuuryoku_shite_kudasai": "tadashii_yuubinbangou_o_nyuuryoku_shite_kudasai",
+    "manshon_tatemono_mei_tou": "manshon_tatemono_mei_tou",
+    "karagaki": "karagaki",
+    "hozon_suru": "hozon_suru",
+    "kihon_jouhou": "kihon_jouhou",
+    "dansei": "dansei",
+    "jousei": "jousei",
+    "sho_jijou_de_joukiigai_ni_renraku_o_kibou_suru": "sho_jijou_de_joukiigai_ni_renraku_o_kibou_suru",
+    "haifun_fuyou": "haifun_fuyou",
+    "rirekisho_ni_kinyu_shita_myouji_to_juusho_no_hyousatsu_no_myouji_ga_kotonaru_baai_nomi_kinyuu": "rirekisho_ni_kinyu_shita_myouji_to_juusho_no_hyousatsu_no_myouji_ga_kotonaru_baai_nomi_kinyuu",
+    "burebyuu": "burebyuu",
+    "PDF_de_daunroudo": "PDF_de_daunroudo",
+    "jyuusho": "jyuusho",
+    "jidou_nyuuryoku": "jidou_nyuuryoku",
+    "Kono_yuubin_bangou_ga_mitsukarimasen": "Kono_yuubin_bangou_ga_mitsukarimasen"
+  },
+  "register": {
+    "kaiin_touroku": "kaiin_touroku",
+    "touroku_suru": "touroku_suru",
+    "login": "login"
+  },
+  "modal": {
+    "confirm":{
+      "sakujo_shitemo_yoroshīdeshou_ka": "sakujo_shitemo_yoroshīdeshou_ka",
+      "kyanseru": "kyanseru",
+      "akusesu": "akusesu"
+    },
+    "reInfo": {
+      "kakunin_onegai": "kakunin_onegai",
+      "modoru": "modoru",
+      "soshin_suru": "soshin_suru"
+    }
+  }
+  ,"my_page": {
+    "my_page" : "my_page",
+    "sama": "sama"
+  }
+}

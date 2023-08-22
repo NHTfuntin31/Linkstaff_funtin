@@ -1,0 +1,35 @@
+# Tiêu đề cấp 1 (H1)
+## Tiêu đề cấp 2 (H2)
+### Tiêu đề cấp 3 (H3)
+
+
+**In đậm**
+*In nghiêng*
+
+
+--- gach ngang
+
+
+- Mục 1
+- Mục 2
+  - Mục con 1
+  - Mục con 2
+
+
+1. Mục 1
+2. Mục 2
+
+
+![Mô tả hình ảnh](url_hinh_anh)
+
+
+
+[Văn bản liên kết](url_lien_ket)
+
+
+
+```javascript
+console.log("Hello, world!");
+
+
+> Đây là một trích dẫn.

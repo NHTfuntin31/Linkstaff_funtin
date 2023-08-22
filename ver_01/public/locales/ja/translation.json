@@ -1,0 +1,167 @@
+{
+  "main": {
+    "welcome": "ようこそ、Reactアプリへ！"
+  },
+  "nav": {
+    "my_page": "マイページ",
+    "chutosaiyo_wo_okangaenokigyousama": "中途採用をお考えの企業さまへ",
+    "tenshokusodanservice_omoshikomi": "転職相談サービスお申し込み",
+    "login": "ログイン"
+  },
+  "top": {
+    "kyujin_wo_sagasu": "求人を探す",
+    "tenshoku_sodan_service": "転職相談サービス",
+    "tenshoku_oyakudachi_joho": "転職お役立ち情報",
+    "kaisha_joho": "会社情報",
+    "otoiawase": "お問い合わせ",
+    "tenshoku_kibou_sha": "転職希望者さま",
+    "chyouto_saiyo": "中途採用ご担当者さま",
+    "sonota": "その他のお問い合わせ",
+    "unei_gaisha": "運営情報",
+
+    "button": {
+      "tenshoku_sodan_sabisu_ni_tsuite_kuwashiku": "転職相談サービスについて詳しく知りたい",
+      "tenshoku_sodan_sabisu_ni_moshikomu": "転職相談サービスに申し込む",
+      "shinchaku_kyujin_ichiran": "新着求人一覧",
+      "shokushu_kara_sagasu": "職種から探す",
+      "kinmuchi_kara_sagasu": "勤務地から探す",
+      "shosai_joken_kara_sagasu": "詳細条件から探す",
+      "tenshoku_konsheruju_shokai": "転職コンシェルジュ紹介",
+      "kuwashi_sabisu_no_nagare": "詳しいサービスの流れ",
+      "tenshoku_seikosha_no_koe_ichiran": "転職成功者の声一覧",
+      "kono_naiyo_de_kensaku": "この内容で検索",
+      "sentaku_shita_joken_o_kuria": "選択した条件をクリア"
+    }
+  },
+  "job": {
+    "shosai_wo_miru": "詳細を見る",
+    "kono_kyujinni_oubosuru": "この求人に応募する"
+  },
+  "common": {
+    "kojin_johono_toriatsukaini_tsuite": "個人情報の取り扱いについて",
+    "kojin_joho_hogohoshin": "個人情報保護方針",
+    "riyokiyaku": "利用規約",
+    "suisho_kankyo": "推奨環境",
+    "shimei": "氏名",
+    "jusho": "住所",
+    "denwa_bango": "電話番号",
+    "yubin_bango": "郵便番号",
+    "email": "メール",
+    "password": "パスワード",
+    "otoiawase": "お問い合わせ（転職希望者さま）",
+    "chyouto_saiyo": "お問い合わせ（中途採用ご担当者さま）",
+    "sonota": "お問い合わせ（その他）",
+    "kihon_jouhou": "基本情報",
+    "gakireki_shokureki": "学歴・職歴",
+    "shikaku_tsuukin_jikan_hoka": "資格・通勤時間ほか",
+    "shibou_douki_kibou_jouken": "志望動機・希望条件",
+    "password_owasure": "パスワードをお忘れの方"
+  },
+  "login": {
+    "login": "ログイン",
+    "registed_user": "登録がお済みの方",
+    "email": "会員ID（メールアドレス）",
+    "password": "パスワード",
+    "remember_login": "次回から自動でログインする",
+    "service": "利用規約",
+    "information": "個人情報の取り扱いについて",
+    "agree": "に同意の上、ご利用ください。",
+    "login_button": "同意してログイン",
+    "forgot_password": "パスワードをお忘れの方",
+    "register": "登録がお済みでない方",
+    "register_start": "手軽にはじめられる",
+    "workport_member": "ワークポートの会員サービス。",
+    "naiyou1": "会員登録（1分）で、豊富な機能がご利用いただけます。",
+    "naiyou2": "費用は一切かかりません。お気軽にご登録ください。",
+    "naiyou3": "無料会員登録でご利用いただける機能",
+    "koumoku1": "・ 履歴書・職務経歴書作成機能",
+    "koumoku2": "・ 豊富な求人情報のご提供",
+    "koumoku3": "・ あなた専用の新着メール、メールマガジン",
+    "koumoku4": "・ 機能充実のマイページ",
+    "koumoku5": "・ お気に入り・閲覧履歴を管理",
+    "register_button": "新規登録する"
+  },
+  "accessibility": {
+    "suishou_kankyouni_tsuite": "推奨環境について",
+    "go_riyouno_burauzani_tsuite": "ご利用のブラウザについて",
+    "sekyuritini_tsuite": "セキュリティについて",
+    "sumatofon_taburetto": "スマートフォン・タブレットをご利用のお客様"
+  },
+  "privacy": {
+    "kojin_joho_hogo_hoshin": "個人情報保護方針"
+  },
+  "form":{
+    "hitsuyou_jikou": "必要事項をご記入の上、「入力内容を確認する」を押して次の画面に進んでください。",
+    "o_toiawase_koumoku": "お問い合わせ項目",
+    "onamae": "お名前",
+    "denwa_bangou": "電話番号",
+    "meru_adoresu": "メールアドレス",
+    "kaisha_mei": "会社名",
+    "kisha_HP": "貴社HP（URL）",
+    "saiyou_yotei_no": "採用予定の",
+    "kyuujin_shokushu": "求人職種名・ポジション名",
+    "kyuujin_no_kinmu_chi": "求人の勤務地",
+    "kyuujin_keisai_peuji": "求人掲載ページ（URL）",
+    "o_toiawase_naiyou": "お問い合わせ内容",
+    "wakkupouto_o_shitta_kikkake": "ワークポートを知ったきっかけ",
+    "kojin_jouhou_no_toriatsukai_ni_tsuite": "個人情報の取扱いについて",
+    "kojin_jouhou_toriatsukai_ni_doui_suru": "個人情報取扱いに同意する",
+    "nyuuryoku_naiyou_o_kakunin_suru": "入力内容を確認する",
+    "hankaku_eisuuji_nyuuryoku": "半角英数字入力",
+    "sei": "姓",
+    "sei_kana": "セイ",
+    "mei": "名",
+    "mei_kana": "メイ",
+    "toshi": "年",
+    "tsuki": "月",
+    "hi": "日",
+    "sei_nen_gappi": "生年月日",
+    "sei_betsu": "性別",
+    "yuubin_bangou": "郵便番号",
+    "todou_fuken": "都道府県",
+    "shiku_chouson_machi_iki": "市区町村・町域",
+    "banchi_tatemono_mei": "番地・建物名",
+    "juusho_furigana": "住所ふりがな",
+    "joukiigai_ni_renrakusen_ga_aru_baai": "上記以外に連絡先がある場合",
+    "shiku_chouson_banchi": "市区町村・番地",
+    "shashin_oappuroudo_suru": "写真をアップロードする",
+    "shashin_o_sakujo_suru": "写真を削除する",
+    "shoumei_shashin": "証明写真",
+    "sakusei_bi": "作成日",
+    "kyou_no_hidzuke_o_hanei_suru": "今日の日付を反映する",
+    "kono_yuubin_bangou_ga_mitsukarimasen": "この郵便番号が見つかりません",
+    "manshon_tatemono_mei_tou": "マンション・建物名等",
+    "karagaki": "方書",
+    "hozon_suru": "保存する",
+    "kihon_jouhou": "基本情報",
+    "dansei": "男性",
+    "jousei": "女性",
+    "sho_jijou_de_joukiigai_ni_renraku_o_kibou_suru": "諸事情で上記以外に連絡を希望する場合のみ記入してください。",
+    "haifun_fuyou": "ハイフン不要",
+    "rirekisho_ni_kinyu_shita_myouji_to_juusho_no_hyousatsu_no_myouji_ga_kotonaru_baai_nomi_kinyuu": "履歴書に記入した苗字と、住所の表札の苗字が異なる場合のみ記入",
+    "burebyuu": "プレビュー",
+    "PDF_de_daunroudo": "PDFでダウンロード",
+    "jyuusho": "住所",
+    "jidou_nyuuryoku": "自動入力",
+    "tadashii_yuubinbangou_o_nyuuryoku_shite_kudasai": "正しい郵便番号を入力してください"
+  },
+  "register": {
+    "kaiin_touroku": "会員登録",
+    "touroku_suru": "同意して登録する",
+    "login": "会員登録済みの方はこちら"
+  },"my_page": {
+    "my_page" : "マイページ",
+    "sama": "様"
+  },"modal": {
+    "confirm":{
+      "sakujo_shitemo_yoroshīdeshou_ka": "削除してもよろしいでしょうか？",
+      "kyanseru": "キャンセル",
+      "akusesu": "アクセス"
+    },
+    "reInfo": {
+      "kakunin_onegai": "確認お願いいたします",
+      "modoru": "戻る",
+      "soshin_suru": "送信する"
+    }
+  }
+}
