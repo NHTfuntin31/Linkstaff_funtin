@@ -19,7 +19,6 @@ import { baseAPI } from "../../global/global";
 
 export const NewInfo = () => {
   const { t } = useTranslation();
-  const [position, setPosition] = useState(0);
   const scrl = useRef<HTMLDivElement | null>(null);
 
   const { isLoading, error, data } = useQuery({
@@ -43,7 +42,7 @@ export const NewInfo = () => {
   };
 
   const renderedItems = data.data.map((item: any, index: any) => (
-    <GroupLink key={index} style={{ transform: `translateX(${position}px`, transition: 'transform 0.5s ease' }}>
+    <GroupLink key={index}>
       <IMG>
         <img
           src="https://www.workport.co.jp/img_rec/231/rec1.jpg?date=20230406"
